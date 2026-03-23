@@ -1,0 +1,14 @@
+/* 1. ดึงฟอนต์มาก่อน (ต้องอยู่อันดับแรกเสมอ) */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap');
+
+/* 2. สั่งใช้งานเฉพาะ h3 */
+h3 {
+    font-family: 'Bitcount Grid Double Ink', sans-serif;
+    color: blue;
+}
+
+
+
+p {
+    color: green;
+}
