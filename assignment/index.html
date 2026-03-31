@@ -18,31 +18,15 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 60px; /* ระยะห่างระหว่างแต่ละหน้า */
         }
-        /* ลูกเล่นกรอบรูปมนและเงาสีฟ้าตามภาพล่าสุด */
-        .blue-accent-frame {
-            position: relative;
-            z-index: 1;
-        }
-        .blue-accent-frame::before {
-            content: "";
-            position: absolute;
-            bottom: -15px;
-            right: -15px;
-            width: 100%;
-            height: 100%;
-            background-color: #0ea5e9; /* สีฟ้า */
-            border-radius: 2rem;
-            z-index: -1;
-        }
+        
     </style>
 </head>
 <body>
 
     <div class="main-container">
 
-        <section class="bg-white border-4 border-blue-600 overflow-hidden shadow-xl rounded-lg">
+        <section class="bg-white border border-slate-200 overflow-hidden p-10 shadow-lg rounded-xl">
             <div class="p-8 md:p-12">
                 <h1 class="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
                     Supporting economic mobility
@@ -52,15 +36,22 @@
                     and their families have a better life.
                 </p>
             </div>
-            <div class="w-full h-96">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" 
-                     class="w-full h-full object-cover object-top" alt="Mobility">
-            </div>
+            <div class="w-full h-96 bg-slate-50 flex justify-center items-center overflow-hidden">
+    <img 
+    src="w1.jpg" 
+    class="max-w-full max-h-full object-contain" 
+    alt="Beautiful and confident woman in professional setting"
+
+>
+</div>
         </section>
 
 
         <section class="bg-white border border-slate-200 p-10 shadow-lg rounded-xl">
             <h2 class="text-4xl font-bold text-slate-950 mb-12 border-b pb-4">Depth</h2>
+            <div class="text-xl text-slate-900 font-normal leading-relaxed mb-8">
+                Our employment and income outcomes within 3 and 6 months of program completion
+            </div>
             <div class="space-y-8">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="bg-green-500 text-white text-6xl font-black px-10 py-8 rounded-2xl shadow-md">82%</div>
@@ -107,7 +98,91 @@
             </div>
 
         </section>
+<section class="bg-white border border-slate-200 p-8 md:p-12 shadow-lg rounded-xl flex flex-col gap-8">
+    
+    <div>
+        <p class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-2">Breadth, Depth & Durability</p>
+        <h2 class="text-4xl font-extrabold text-slate-900 leading-tight max-w-2xl">
+            Our impact comes from advancing three areas simultaneously
+        </h2>
+    </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        
+        <div class="flex flex-col gap-4">
+            <h3 class="text-2xl font-bold text-slate-900">Breadth</h3>
+            <p class="text-sm text-slate-600 leading-relaxed min-h-[60px]">
+                Our annual and cumulative volume of graduates around the world
+            </p>
+            <div class="space-y-4">
+                <div>
+                    <div class="bg-sky-500 text-white text-3xl font-black px-4 py-3 rounded-lg inline-block w-full text-center">
+                        130,663
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 mt-2">graduates across 17 countries since launching in 2015</p>
+                </div>
+                <div>
+                    <div class="bg-sky-500 text-white text-3xl font-black px-4 py-3 rounded-lg inline-block w-full text-center">
+                        405,055
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 mt-2">family members indirectly supported</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h3 class="text-2xl font-bold text-slate-900">Depth</h3>
+            <p class="text-sm text-slate-600 leading-relaxed min-h-[60px]">
+                Our employment and income outcomes within 3 and 6 months of program completion
+            </p>
+            <div class="space-y-4">
+                <div>
+                    <div class="bg-green-500 text-white text-3xl font-black px-4 py-3 rounded-lg inline-block w-full text-center">
+                        82%
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 mt-2">of graduates placed in jobs within six months of program completion (73% at three months)</p>
+                </div>
+                <div>
+                    <div class="bg-green-500 text-white text-3xl font-black px-4 py-3 rounded-lg inline-block w-full text-center">
+                        $1.5 billion
+                    </div>
+                    <p class="text-xs font-bold text-slate-800 mt-2">in cumulative wages earned by graduates since 2015</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h3 class="text-2xl font-bold text-slate-900">Durability</h3>
+            <p class="text-sm text-slate-600 leading-relaxed min-h-[60px]">
+                Sustained employment, income, and well-being outcomes over time.
+                <span class="block font-bold mt-1">Our alumni 2-5 years after graduation:</span>
+            </p>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="text-center">
+                    <div class="bg-amber-400 text-slate-900 text-xl font-black py-4 rounded-lg shadow-sm">76%</div>
+                    <p class="text-[10px] font-bold mt-2 leading-tight">continue to be employed</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-amber-400 text-slate-900 text-xl font-black py-4 rounded-lg shadow-sm">58%</div>
+                    <p class="text-[10px] font-bold mt-2 leading-tight">earn a living wage (20% above minimum wage)</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-amber-400 text-slate-900 text-xl font-black py-4 rounded-lg shadow-sm">36%</div>
+                    <p class="text-[10px] font-bold mt-2 leading-tight">are able to save money</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mt-4">
+        <button class="border-2 border-slate-900 px-6 py-2 rounded-lg font-bold flex items-center gap-2 hover:bg-slate-50 transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px]">
+            More impact 
+            <span>→</span>
+        </button>
+    </div>
+
+</section>
     </div>
 
 </body>
