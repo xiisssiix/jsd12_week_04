@@ -3,42 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supporting Economic Mobility</title>
+    <title>Generation Portfolio Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background-color: #f1f5f9;
             margin: 0;
+            padding: 40px 20px;
+        }
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 60px; /* ระยะห่างระหว่างแต่ละหน้า */
+        }
+        /* ลูกเล่นกรอบรูปมนและเงาสีฟ้าตามภาพล่าสุด */
+        .blue-accent-frame {
+            position: relative;
+            z-index: 1;
+        }
+        .blue-accent-frame::before {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            width: 100%;
+            height: 100%;
+            background-color: #0ea5e9; /* สีฟ้า */
+            border-radius: 2rem;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-white w-full max-w-2xl border-4 border-blue-600 overflow-hidden shadow-2xl">
-        
-        <div class="p-8 pt-10">
-            <h1 class="text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-                Supporting economic mobility
-            </h1>
-            <p class="text-sm font-bold text-slate-800 max-w-md leading-relaxed">
-                Everyone should have access to a good job and income that can help them 
-                and their families have a better life.
-            </p>
-        </div>
+    <div class="main-container">
 
-        <div class="w-full h-96 overflow-hidden">
-            <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Business woman smiling" 
-                class="w-full h-full object-cover object-top"
-            >
-        </div>
+        <section class="bg-white border-4 border-blue-600 overflow-hidden shadow-xl rounded-lg">
+            <div class="p-8 md:p-12">
+                <h1 class="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
+                    Supporting economic mobility
+                </h1>
+                <p class="text-lg font-bold text-slate-800 max-w-2xl">
+                    Everyone should have access to a good job and income that can help them 
+                    and their families have a better life.
+                </p>
+            </div>
+            <div class="w-full h-96">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" 
+                     class="w-full h-full object-cover object-top" alt="Mobility">
+            </div>
+        </section>
+
+
+        <section class="bg-white border border-slate-200 p-10 shadow-lg rounded-xl">
+            <h2 class="text-4xl font-bold text-slate-950 mb-12 border-b pb-4">Depth</h2>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-green-500 text-white text-6xl font-black px-10 py-8 rounded-2xl shadow-md">82%</div>
+                    <p class="text-xl text-slate-900 font-semibold leading-relaxed">
+                        of graduates placed in jobs within six months of program completion 
+                        <span class="text-slate-500 block text-lg font-normal mt-1">(73% at three months)</span>
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-green-500 text-white text-5xl font-black px-10 py-8 rounded-2xl shadow-md whitespace-nowrap">$1.5 billion</div>
+                    <p class="text-xl text-slate-900 font-semibold leading-relaxed">
+                        in cumulative wages earned by graduates since 2015
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-white border border-slate-200 p-8 md:p-16 shadow-lg rounded-xl flex flex-col md:flex-row gap-12 items-center">
+            
+            <div class="w-full md:w-1/2">
+                <div class="blue-accent-frame">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                         class="rounded-[2rem] w-full aspect-square object-cover shadow-inner" 
+                         alt="Smiling man">
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex flex-col gap-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    Generation is a global nonprofit that believes in the power of jobs to change lives
+                </h2>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    We train and place adults into careers that would otherwise be inaccessible. 
+                    And we advocate to improve the workforce system. Launched in 2015, 
+                    Generation comprises a global hub and a network of in-country affiliates 
+                    that span 17 countries.
+                </p>
+                
+                <a href="#" class="mt-4 inline-flex items-center justify-between w-fit px-6 py-3 bg-sky-200 border-2 border-slate-900 rounded-lg font-bold text-slate-900 hover:bg-sky-300 transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                    Learn more about us 
+                    <span class="ml-4">→</span>
+                </a>
+            </div>
+
+        </section>
 
     </div>
 
